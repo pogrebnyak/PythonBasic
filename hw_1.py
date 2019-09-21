@@ -1,8 +1,0 @@
-a = input("a: ")
-b = input("b: ")
-S=int(a)*int(b)
-P=2*(int(a)+int(b))
-print("a =",a)
-print("b =",b)
-print("S =",S)
-print("P =",P)
