@@ -1,7 +1,7 @@
 import math
 
 while True:
-  print('Вычисление площади круга')
+  print('Вычисление площади круга с радиусом R')
   while True:
     R = input('Введите радиус круга R (мм): ')
     if R.isdigit() == 0 :
@@ -12,7 +12,7 @@ while True:
         continue
     break
   S = round(math.pi*(int(R)**2),4)
-  print('Площадь круг = ',S,'мм' +u'\u00b2')
+  print('Площадь круг c радиусом '+R+' мм = ',S,'мм' +u'\u00b2')
   y = input('Желаете еще раз расчитать площать круга(y/n)? ')
   if y != 'y' : break
 
