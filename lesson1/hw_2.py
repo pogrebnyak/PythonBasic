@@ -1,7 +1,3 @@
 R = input('Введите радиус круга: ')
-if '.' in R == True:
-    float(R)
-else:
-    int(R)
-print(type(R))
-
+S = 3,14*R
+print(S)
