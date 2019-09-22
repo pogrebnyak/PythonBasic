@@ -39,5 +39,5 @@ while True:
       continue
   S = round(math.sqrt(podkoren),4)
   print('Площадь треугольника = ', S, 'мм' +u'\u00b2')
-  y = input('Вычислить площать треугольника еще раз (y/n)? ')
+  y = input('Вычислить площадь треугольника еще раз (y/n)? ')
   if y != 'y': break
