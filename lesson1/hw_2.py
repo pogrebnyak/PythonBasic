@@ -14,7 +14,6 @@ while True:
   S = round(math.pi*(int(R)**2),4)
   print('Площадь круг = ',S,'мм' +u'\u00b2')
   y = input('Желаете еще раз расчитать площать круга(y/n)? ')
-  print(y)
   if y != 'y' : break
 
 
