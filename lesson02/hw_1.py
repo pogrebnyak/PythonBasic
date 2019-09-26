@@ -14,6 +14,10 @@ while y == 'y':
             print('N не может быть строкой.')
             continue
         break
+        if not int(matches):
+            print('N не может равняться нулю')
+            continue
+        break
     matches = int(matches)
     print('На столе лежит спичек:', matches)
     while True:
