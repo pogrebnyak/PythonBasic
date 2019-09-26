@@ -13,7 +13,6 @@ while y == 'y':
         if not matches.isdigit():
             print('N не может быть строкой.')
             continue
-        break
         if not int(matches):
             print('N не может равняться нулю')
             continue
