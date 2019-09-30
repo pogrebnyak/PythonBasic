@@ -14,7 +14,7 @@ while True:
         print('3')
         break
     elif y == '4':
-        print('4')
+        print('Выход')
         break
     else:
         print('5')
