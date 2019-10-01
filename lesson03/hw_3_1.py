@@ -6,9 +6,8 @@ while y == 'y':
   def calc(a):
     res = 0
     for i in str(a):
-        res += 1
-    if a < 0 :
-        res -= 1
+        if i.isdigit():
+          res += 1
     return res
 
   while True:
