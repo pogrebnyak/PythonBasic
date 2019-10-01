@@ -14,16 +14,16 @@ def input_value(str_value):
             print('ОШИБКА! Вы должны ввести целое или вещественное число'+'\n')
     return f
 
-def circle(r):
+def circle(r):  #КРУГ
   area_circle = math.pi*(float(r)**2)
   return area_circle
 
-def rect(a,b):
+def rect(a,b):  #ПРЯМОУГОЛЬНИК
   area = a * b
   perimeter = 2 * (a + b)
   return area, perimeter 
 
-def triangle(a,b,c):
+def triangle(a,b,c):  #ТРЕУГОЛЬНИК
     p = (a + b + c) / 2
     podkoren = p * (p - a) * (p - b) * (p - c)
     if podkoren < 0 or podkoren == 0:
@@ -46,10 +46,13 @@ while True:
           continue
         break
     
+    # Круг
     if y == '1':
         print(' ')
         radius_circle = input_value('Введите радиус круга')
         print('Площадь круга: ' + str(circle(radius_circle))+'\n')
+        
+    # Треугольник
     elif y == '2':
         print(' ')
         while True:
@@ -60,6 +63,8 @@ while True:
           if area_triangle != None:
               print('Площадь треугольника: ' + str(area_triangle)+'\n')
               break
+            
+    # Прямоугольник
     elif y == '3':
         print(' ')
         rect_a = input_value('Введите длину прямоугольника')
@@ -67,6 +72,8 @@ while True:
         area_rect, perimeter_rect = rect(rect_a,rect_b)
         print('Площадь прямоугольника: ' + str(area_rect))
         print('Периметр прямоугольника: ' + str(perimeter_rect)+'\n')
+        
+    # Выход
     elif y == '4':
         print('Выход')
         break
