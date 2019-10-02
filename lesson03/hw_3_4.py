@@ -1,5 +1,3 @@
-y = 'y'
-
 def calc(a):
     res = 0
     for i in a:
@@ -8,20 +6,25 @@ def calc(a):
           
     return res
 
-while y == 'y':
-  while True:
-      s = 0
-      input_value = (input('a: '))
-      try:
-        input_value_complex = complex(input_value)
+if __name__ == "__main__":
+
+    print('Программа подсчета цифр в числе(int, float, complex)')
+    y = 'y'
+
+    while y == 'y':
+      while True:
+          s = 0
+          input_value = (input('Введите цисло: '))
+          try:
+            input_value_complex = complex(input_value)
+            break
+          except ValueError:
+            s = None
+            break       
+        
+      if s is not None:
+        print(calc(input_value))
+      else:
+        print(s) 
         break
-      except ValueError:
-        s = None
-        break       
-    
-  if s is not None:
-    print(calc(input_value))
-  else:
-    print(s) 
-    break
-  y = input('Еще раз?(y/n):')
+      y = input('Еще раз?(y/n):')
