@@ -15,22 +15,26 @@ def digit_count(text):
           s += 1
   return s
 
-text_input = input('В ведите строку : ')  
+while True:
+    text_input = input('Введите строку : ')
+    if text_input == '':
+        break
 
-text_input = text_input.lower()
-text_list = text_input.split()
-lines = len(text_input.splitlines())
-digits = digit_count(text_input)
-words_stat = text_stat(text_list)
-chars_stat = text_stat(text_input)
-print('')
-print('Всего строк: '+str(lines)+'\n')
+    text_input = text_input.lower()
+    text_list = text_input.split()
+    lines = len(text_input.splitlines())
+    digits = digit_count(text_input)
+    words_stat = text_stat(text_list)
+    chars_stat = text_stat(text_input)
+    print('')
+    print('Всего строк: '+str(lines)+'\n')
+    print('Всего цифр: '+str(digits)+'\n')
 
-print('Всего цифр: '+str(digits)+'\n')
+    for i,j in words_stat.items():
+        print(repr(i),'=',j)
+    print('')
 
-for i,j in words_stat.items():
-    print(repr(i),'=',j)
-print('')
+    for i,j in chars_stat.items():
+        print(repr(i),'=',j)
 
-for i,j in chars_stat.items():
-    print(repr(i),'=',j)
+    print()
