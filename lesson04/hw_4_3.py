@@ -1,14 +1,14 @@
-def text_stat(text,excep = ''):
+def text_stat(text,filter = ''):
     text_dict = {}
     for i in text:
         if text_dict.get(i) is not None:
             continue
         else:
             text_dict[i] = text.count(i)
-    excep = excep.lower()
-    excep = excep.split()
+            
+    filter = filter.lower().split()
 
-    for i in excep:
+    for i in filter:
         if text_dict.get(i) is None:
             continue
         del text_dict[i]
@@ -17,7 +17,7 @@ def text_stat(text,excep = ''):
 
 while True:
     text_input = input('Введите строку : ')
-    exception_input = input('Введите слово или слова которые не нужно считать: ')
+    exception_input = input('Введите исключения: ')
     if text_input == '':
         break
 
