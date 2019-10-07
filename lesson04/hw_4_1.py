@@ -20,9 +20,9 @@ while True:
     if text_input == '':
         break
 
-    text_input = '''About 90 percent of all children attend public school, which is free. The other 10 percent go I private schools, 
-    which often include religious education. They are similar to the public schools but parents must pay for their children to go to 
-    these schools. About half of all private schools are run by Catholics.'''
+    # text_input = '''About 90 percent of all children attend public school, which is free. The other 10 percent go I private schools,
+    # which often include religious education. They are similar to the public schools but parents must pay for their children to go to
+    # these schools. About half of all private schools are run by Catholics.'''
 
     text_input = text_input.lower()
     text_list = text_input.split()
