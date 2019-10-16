@@ -1,4 +1,4 @@
-class Car():
+class Car:
 
     cashbox = 0
     car_in = 0
