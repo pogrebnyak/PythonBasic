@@ -18,19 +18,17 @@ def digit_count(text):
 if __name__ == "__main__":
     text_input = ''
     lines = 0
+    text_list =[]
 
     while True:
         text_s = input('Введите строку : ')
-        text_input += f'{text_s} '
+        text_input += text_s
+        text_list.extend(text_s.lower().split())
         if text_s == '':
-            text_input = text_input[:-2]
             break
         lines += 1
 
-    print(repr(text_input))
-
     text_input = text_input.lower()
-    text_list = text_input.split()
     digits = digit_count(text_input)
     words_stat = text_stat(text_list)
     chars_stat = text_stat(text_input)
