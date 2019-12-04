@@ -1,0 +1,2 @@
+while not s.isdigit():
+    s = input()

@@ -1,0 +1,15 @@
+def text_stat(text,*filter):
+    if filter != ():
+      if type(filter[0]) == tuple:
+        filter = filter[0]
+    print(filter)
+
+
+text = ('мама', 'мыла')
+
+# text_stat('Мама мыла раму')
+# text_stat('Мама мыла раму',"мама")
+text_stat('Мама мыла раму',"мама","мыла")
+# text_stat('Мама мыла раму',text)
+
+
