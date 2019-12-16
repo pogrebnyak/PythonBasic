@@ -1,6 +1,6 @@
-dict_1 = {'Украина': 'Киев','Россия':'Москва','Германия':'Берлин'}
-list_1 = ['Украина', 'Чехия', 'Польша']
+countries_dict = {'Украина': 'Киев','Россия':'Москва','Германия':'Берлин'}
+countries = ['Украина', 'Чехия', 'Польша']
 
-for i in list_1:
-    if i in dict_1:
-        print(dict_1[i])
+for country in countries:
+    if country in countries_dict:
+        print(countries_dict[country])
